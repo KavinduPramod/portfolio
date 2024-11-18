@@ -8,13 +8,13 @@ const NavBar = () => {
   const links = [
     { id: 1, link: 'home' },
     { id: 2, link: 'About' },
-    { id: 3, link: 'portfolio' },
+    { id: 3, link: 'My work' },
     { id: 4, link: 'Experience' },
     { id: 5, link: 'Contact' },
   ];
 
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed'>
+    <div className='flex justify-between items-center w-full h-20 px-4 text-white backdrop-blur fixed z-10'>
       <div>
         <h1 className='text-5xl font-signature ml-2'>Kavindu pramod</h1>
       </div>
