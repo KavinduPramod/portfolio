@@ -42,7 +42,7 @@ const links= [
                     Resume  <BsFillPersonLinesFill size={30}/>
                 </>
                 ),
-                href:"Kavindu Pramod.pdf",
+                href:"Kavindu Abeysundara.pdf",
                 style: "rounded-br-md",
                 download: true
         }
