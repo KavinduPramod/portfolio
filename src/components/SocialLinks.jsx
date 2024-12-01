@@ -5,7 +5,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'; // Importing left and right arrows
 
 const SocialLinks = () => {
-  const [isOpen, setIsOpen] = useState(true); // State to track if links are open or folded
+  const [isOpen, setIsOpen] = useState(false); // State to track if links are open or folded
 
   const links = [
     {
