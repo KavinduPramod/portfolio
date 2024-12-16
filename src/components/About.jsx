@@ -10,7 +10,7 @@ const About = () => {
             </p>
         </div>
         <p className='text-xl mt-20'>
-            Hello! I'm Kavindu pramod, a student at Informatics Institute of Technology (IIT) in Sri Lanka, pursuing BSc in Software Engineering. Welcome to my portfolio website!
+            Hello! I'm Kavindu pramod, a student at Informatics Institute of Technology (IIT) in Sri Lanka, pursuing BSc in Computer science. Welcome to my portfolio website!
         </p>
         <br />
         <p className='text-xl'>
