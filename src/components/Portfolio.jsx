@@ -50,6 +50,11 @@ const Portfolio = () => {
       codeLink: 'https://github.com/KavinduPramod/Snake_Game.git',
       demoLink: 'https://example.com/snakegame-demo' // Replace with the actual demo link or remove if not available
     },
+    {
+      id: 7,
+      title: 'moodmirror-microsite',
+      demoLink: 'https://sites.google.com/iit.ac.lk/moodmirror/home'
+    },
   ];
 
   return (
@@ -63,10 +68,10 @@ const Portfolio = () => {
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 w-full'>
           {portfolios.map(({ id, title, src, codeLink, demoLink }) => (
             <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-              <img src={src} alt="" className='rounded-md duration-200 hover:scale-110' />
+              {src && <img src={src} alt="" className='rounded-md duration-200 hover:scale-110' />}
               <div className='flex items-center justify-center w-full'>
-                <a href={demoLink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-400 hover:scale-105'>Demo</a>
-                <a href={codeLink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-400 hover:scale-105'>Code</a>
+                {demoLink && <a href={demoLink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-400 hover:scale-105'>Demo</a>}
+                {codeLink && <a href={codeLink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-400 hover:scale-105'>Code</a>}
               </div>
             </div>
           ))}
